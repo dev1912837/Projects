@@ -1,0 +1,421 @@
+MariaDB [BabyName]> \. BabyName.txt
+MariaDB [BabyName]> \. BabyName.sql
+Database changed
++--------------------+
+| Tables_in_BabyName |
++--------------------+
+| BabyName           |
++--------------------+
+1 row in set (0.001 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| name   | varchar(15) | NO   | PRI | NULL    |       |
+| count  | int(11)     | YES  |     | NULL    |       |
+| gender | char(1)     | NO   | PRI | NULL    |       |
+| year   | smallint(6) | NO   | PRI | NULL    |       |
+| place  | char(2)     | NO   | PRI | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+5 rows in set (0.001 sec)
+
++-----------+
+| name      |
++-----------+
+| Aadarsh   |
+| Aaden     |
+| Aadil     |
+| Aaditya   |
+| Aahil     |
+| Aailyah   |
+| Aaisha    |
+| Aajaylah  |
+| Aakanksha |
+| Aakash    |
+| Aala      |
+| Aalaya    |
+| Aalayah   |
+| Aalaysia  |
+| Aaleah    |
+| Aaleigha  |
+| Aaleyah   |
+| Aalia     |
+| Aaliah    |
+| Aaliayah  |
+| Aaliayh   |
+| Aalijah   |
+| Aaliya    |
+| Aaliyah   |
+| Aaliyan   |
+| Aaliyha   |
+| Aalliyah  |
+| Aalyah    |
+| Aalyha    |
+| Aalyiah   |
+| Aalyssa   |
+| Aamari    |
+| Aamaya    |
+| Aamina    |
+| Aaminah   |
+| Aamir     |
+| Aamira    |
+| Aamirah   |
+| Aamiyah   |
+| Aamna     |
+| Aanchal   |
+| Aanika    |
+| Aaniyah   |
+| Aanya     |
+| Aaran     |
+| Aaren     |
+| Aaria     |
+| Aariah    |
+| Aariana   |
+| Aaric     |
++-----------+
+50 rows in set (0.000 sec)
+
++------+------+
+| year | name |
++------+------+
+| 1969 | Dev  |
+| 1970 | Dev  |
+| 1971 | Dev  |
+| 1974 | Dev  |
+| 1976 | Dev  |
+| 1977 | Dev  |
+| 1978 | Dev  |
+| 1979 | Dev  |
+| 1980 | Dev  |
+| 1981 | Dev  |
+| 1982 | Dev  |
+| 1983 | Dev  |
+| 1984 | Dev  |
+| 1986 | Dev  |
+| 1987 | Dev  |
+| 1988 | Dev  |
+| 1989 | Dev  |
+| 1990 | Dev  |
+| 1991 | Dev  |
+| 1992 | Dev  |
+| 1994 | Dev  |
+| 1995 | Dev  |
+| 1996 | Dev  |
+| 1997 | Dev  |
+| 1998 | Dev  |
+| 1999 | Dev  |
+| 2000 | Dev  |
+| 2001 | Dev  |
+| 2002 | Dev  |
+| 2003 | Dev  |
+| 2004 | Dev  |
+| 2005 | Dev  |
+| 2006 | Dev  |
+| 2007 | Dev  |
+| 2008 | Dev  |
+| 2009 | Dev  |
+| 2010 | Dev  |
+| 2011 | Dev  |
+| 2012 | Dev  |
+| 2013 | Dev  |
+| 2014 | Dev  |
+| 2015 | Dev  |
++------+------+
+42 rows in set (0.000 sec)
+
++------------+
+| MAX(count) |
++------------+
+|      99680 |
++------------+
+1 row in set (0.000 sec)
+
++--------+------------+
+| name   | SUM(count) |
++--------+------------+
+| Aakash |    3493004 |
++--------+------------+
+1 row in set (0.000 sec)
+
++---------+------------+
+| name    | SUM(count) |
++---------+------------+
+| Aaliyah |    3170468 |
++---------+------------+
+1 row in set (0.000 sec)
+
++-------+-------------+
+| place | COUNT(name) |
++-------+-------------+
+| AK    |       27143 |
+| AL    |      128556 |
+| AR    |       97560 |
+| AZ    |      108599 |
+| CA    |      361128 |
+| CO    |      101403 |
+| CT    |       78039 |
+| DC    |       53933 |
+| DE    |       30892 |
+| FL    |      191928 |
+| GA    |      172144 |
+| HI    |       52696 |
+| IA    |       89476 |
+| ID    |       55018 |
+| IL    |      218033 |
+| IN    |      131719 |
+| KS    |       89748 |
+| KY    |      113070 |
+| LA    |      142233 |
+| MA    |      112605 |
+| MD    |      104849 |
+| ME    |       48713 |
+| MI    |      173590 |
+| MN    |      107818 |
+| MO    |      131478 |
+| MS    |      109681 |
+| MT    |       44060 |
+| NC    |      163740 |
+| ND    |       44411 |
+| NE    |       68616 |
+| NH    |       37486 |
+| NJ    |      144611 |
+| NM    |       72585 |
+| NV    |       43473 |
+| NY    |      282486 |
+| OH    |      185277 |
+| OK    |      111492 |
+| OR    |       83676 |
+| PA    |      188681 |
+| RI    |       38789 |
+| SC    |      112529 |
+| SD    |       45559 |
+| TN    |      132832 |
+| TX    |      330672 |
+| US    |     1858689 |
+| UT    |       84193 |
+| VA    |      139163 |
+| VT    |       28006 |
+| WA    |      116631 |
+| WI    |      110188 |
+| WV    |       74572 |
+| WY    |       27237 |
++-------+-------------+
+52 rows in set (0.000 sec)
+
++---------+-------+--------+------+-------+
+| name    | count | gender | year | place |
++---------+-------+--------+------+-------+
+| Dev     |     5 | M      | 1969 | US    |
+| Dev     |     5 | M      | 1988 | NY    |
+| Dev     |     5 | M      | 1991 | NJ    |
+| Dev     |     5 | M      | 2000 | OH    |
+| Dev     |     5 | M      | 2000 | NJ    |
+| Jaidev  |     5 | M      | 2001 | US    |
+| Dev     |     5 | M      | 2001 | GA    |
+| Dev     |     5 | M      | 2002 | TX    |
+| Dev     |     5 | M      | 2003 | NC    |
+| Dev     |     5 | M      | 2004 | VA    |
+| Dev     |     5 | M      | 2004 | PA    |
+| Jaidev  |     5 | M      | 2004 | US    |
+| Dev     |     5 | M      | 2005 | TX    |
+| Dev     |     5 | M      | 2005 | IL    |
+| Dev     |     5 | M      | 2005 | VA    |
+| Mahadev |     5 | M      | 2006 | US    |
+| Dev     |     5 | M      | 2006 | PA    |
+| Dev     |     5 | M      | 2006 | FL    |
+| Dev     |     5 | M      | 2007 | TX    |
+| Dev     |     5 | M      | 2007 | NY    |
+| Dev     |     5 | M      | 2007 | NC    |
+| Dev     |     5 | M      | 2007 | PA    |
+| Vasudev |     5 | M      | 2010 | US    |
+| Dev     |     5 | M      | 2011 | MA    |
+| Vasudev |     5 | M      | 2013 | US    |
+| Dev     |     5 | M      | 2013 | PA    |
+| Dev     |     5 | M      | 2014 | PA    |
+| Mahadev |     5 | M      | 2015 | US    |
+| Dev     |     5 | M      | 2015 | VA    |
+| Dev     |     5 | M      | 2015 | GA    |
+| Dev     |     6 | M      | 1970 | US    |
+| Dev     |     6 | M      | 1974 | US    |
+| Dev     |     6 | M      | 2001 | NC    |
+| Dev     |     6 | M      | 2001 | NY    |
+| Dev     |     6 | M      | 2002 | GA    |
+| Dev     |     6 | M      | 2003 | GA    |
+| Dev     |     6 | M      | 2004 | FL    |
+| Dev     |     6 | M      | 2005 | FL    |
+| Dev     |     6 | M      | 2005 | CA    |
+| Jaidev  |     6 | M      | 2006 | US    |
+| Dev     |     6 | M      | 2006 | VA    |
+| Dev     |     6 | M      | 2007 | GA    |
+| Dev     |     6 | M      | 2007 | FL    |
+| Dev     |     6 | M      | 2008 | GA    |
+| Jaidev  |     6 | M      | 2009 | US    |
+| Dev     |     6 | M      | 2009 | MD    |
+| Dev     |     6 | M      | 2009 | TX    |
+| Dev     |     6 | M      | 2010 | MD    |
+| Dev     |     6 | M      | 2010 | FL    |
+| Dev     |     6 | M      | 2011 | GA    |
+| Dev     |     6 | M      | 2013 | MA    |
+| Dev     |     6 | M      | 2013 | GA    |
+| Dev     |     6 | M      | 2013 | IL    |
+| Dev     |     6 | M      | 2014 | IL    |
+| Dev     |     6 | M      | 2014 | TX    |
+| Dev     |     6 | M      | 2015 | NC    |
+| Dev     |     7 | M      | 1982 | US    |
+| Dev     |     7 | M      | 1987 | US    |
+| Dev     |     7 | M      | 1998 | NJ    |
+| Dev     |     7 | M      | 2000 | NY    |
+| Dev     |     7 | M      | 2003 | NY    |
+| Jaidev  |     7 | M      | 2005 | US    |
+| Dev     |     7 | M      | 2006 | GA    |
+| Dev     |     7 | M      | 2007 | VA    |
+| Dev     |     7 | M      | 2009 | GA    |
+| Dev     |     7 | M      | 2009 | TN    |
+| Dev     |     7 | M      | 2009 | FL    |
+| Dev     |     7 | M      | 2009 | MI    |
+| Dev     |     7 | M      | 2010 | TX    |
+| Dev     |     7 | M      | 2013 | TX    |
+| Dev     |     7 | M      | 2013 | VA    |
+| Dev     |     7 | M      | 2014 | MI    |
+| Dev     |     7 | M      | 2014 | VA    |
+| Jaidev  |     7 | M      | 2014 | US    |
+| Vasudev |     7 | M      | 2015 | US    |
+| Dev     |     7 | M      | 2015 | TX    |
+| Dev     |     8 | M      | 1971 | US    |
+| Dev     |     8 | M      | 1976 | US    |
+| Dev     |     8 | M      | 1977 | US    |
+| Dev     |     8 | M      | 1986 | US    |
+| Dev     |     8 | M      | 1989 | US    |
+| Dev     |     8 | M      | 2000 | IL    |
+| Dev     |     8 | M      | 2002 | CA    |
+| Dev     |     8 | M      | 2004 | TX    |
+| Dev     |     8 | M      | 2005 | GA    |
+| Dev     |     8 | M      | 2006 | NY    |
+| Dev     |     8 | M      | 2006 | TX    |
+| Dev     |     8 | M      | 2008 | NY    |
+| Dev     |     8 | M      | 2010 | GA    |
+| Dev     |     8 | M      | 2011 | FL    |
+| Dev     |     8 | M      | 2012 | FL    |
+| Jaidev  |     8 | M      | 2013 | US    |
+| Dev     |     8 | M      | 2014 | GA    |
+| Dev     |     8 | M      | 2015 | PA    |
+| Dev     |     9 | M      | 1978 | US    |
+| Dev     |     9 | M      | 1983 | US    |
+| Dev     |     9 | M      | 2003 | IL    |
+| Dev     |     9 | M      | 2004 | NY    |
+| Dev     |     9 | M      | 2009 | NY    |
+| Dev     |     9 | M      | 2010 | CA    |
+| Dev     |     9 | M      | 2015 | NY    |
+| Dev     |    10 | M      | 1980 | US    |
+| Dev     |    10 | M      | 1995 | US    |
+| Dev     |    10 | M      | 2003 | TX    |
+| Dev     |    10 | M      | 2004 | CA    |
+| Dev     |    10 | M      | 2005 | NY    |
+| Dev     |    10 | M      | 2006 | IL    |
+| Dev     |    10 | M      | 2007 | IL    |
+| Dev     |    10 | M      | 2008 | IL    |
+| Dev     |    10 | M      | 2008 | FL    |
+| Dev     |    10 | M      | 2011 | IL    |
+| Dev     |    10 | M      | 2013 | NY    |
+| Dev     |    10 | M      | 2014 | NY    |
+| Dev     |    10 | M      | 2015 | FL    |
+| Dev     |    11 | M      | 1981 | US    |
+| Dev     |    11 | M      | 2006 | CA    |
+| Jaidev  |    11 | M      | 2008 | US    |
+| Dev     |    11 | M      | 2008 | NJ    |
+| Dev     |    11 | M      | 2012 | NY    |
+| Jaidev  |    11 | M      | 2012 | US    |
+| Dev     |    11 | M      | 2012 | NJ    |
+| Dev     |    11 | M      | 2015 | NJ    |
+| Dev     |    12 | M      | 1979 | US    |
+| Dev     |    12 | M      | 1984 | US    |
+| Dev     |    12 | M      | 1988 | US    |
+| Dev     |    12 | M      | 1996 | US    |
+| Dev     |    12 | M      | 2009 | IL    |
+| Dev     |    12 | M      | 2012 | TX    |
+| Dev     |    12 | M      | 2014 | NJ    |
+| Dev     |    13 | M      | 2001 | CA    |
+| Jaidev  |    13 | M      | 2007 | US    |
+| Dev     |    13 | M      | 2011 | TX    |
+| Dev     |    13 | M      | 2012 | IL    |
+| Dev     |    14 | M      | 1994 | US    |
+| Dev     |    14 | M      | 1997 | US    |
+| Dev     |    14 | M      | 2008 | TX    |
+| Jaidev  |    14 | M      | 2010 | US    |
+| Dev     |    14 | M      | 2010 | IL    |
+| Dev     |    14 | M      | 2011 | NY    |
+| Jaidev  |    14 | M      | 2011 | US    |
+| Dev     |    14 | M      | 2013 | NJ    |
+| Dev     |    15 | M      | 1990 | US    |
+| Dev     |    15 | M      | 2002 | NJ    |
+| Dev     |    15 | M      | 2004 | IL    |
+| Dev     |    15 | M      | 2007 | CA    |
+| Dev     |    15 | M      | 2008 | CA    |
+| Dev     |    15 | M      | 2011 | CA    |
+| Dev     |    17 | M      | 2005 | NJ    |
+| Dev     |    17 | M      | 2010 | NJ    |
+| Dev     |    17 | M      | 2015 | CA    |
+| Dev     |    18 | M      | 1992 | US    |
+| Dev     |    18 | M      | 2003 | CA    |
+| Dev     |    18 | M      | 2004 | NJ    |
+| Dev     |    19 | M      | 1991 | US    |
+| Dev     |    19 | M      | 2001 | NJ    |
+| Dev     |    19 | M      | 2003 | NJ    |
+| Dev     |    19 | M      | 2013 | CA    |
+| Dev     |    19 | M      | 2014 | CA    |
+| Dev     |    20 | M      | 2007 | NJ    |
+| Dev     |    21 | M      | 1998 | US    |
+| Dev     |    21 | M      | 2012 | CA    |
+| Dev     |    22 | M      | 1999 | US    |
+| Dev     |    22 | M      | 2009 | NJ    |
+| Dev     |    24 | M      | 2006 | NJ    |
+| Dev     |    25 | M      | 2009 | CA    |
+| Dev     |    29 | M      | 2011 | NJ    |
+| Dev     |    41 | M      | 2000 | US    |
+| Dev     |    66 | M      | 2002 | US    |
+| Dev     |    72 | M      | 2001 | US    |
+| Dev     |   101 | M      | 2005 | US    |
+| Dev     |   104 | M      | 2007 | US    |
+| Dev     |   105 | M      | 2015 | US    |
+| Dev     |   107 | M      | 2008 | US    |
+| Dev     |   111 | M      | 2003 | US    |
+| Dev     |   111 | M      | 2006 | US    |
+| Dev     |   113 | M      | 2014 | US    |
+| Dev     |   114 | M      | 2010 | US    |
+| Dev     |   114 | M      | 2013 | US    |
+| Dev     |   117 | M      | 2004 | US    |
+| Dev     |   119 | M      | 2012 | US    |
+| Dev     |   136 | M      | 2011 | US    |
+| Dev     |   145 | M      | 2009 | US    |
++---------+-------+--------+------+-------+
+182 rows in set (0.000 sec)
+
++-------------+
+| COUNT(name) |
++-------------+
+|     7601706 |
++-------------+
+1 row in set (0.000 sec)
+
++-------------+
+| COUNT(name) |
++-------------+
+|       69937 |
++-------------+
+1 row in set (0.000 sec)
+
++-------------+
+| COUNT(name) |
++-------------+
+|       27231 |
++-------------+
+1 row in set (0.000 sec)
+
++-------------+
+| COUNT(name) |
++-------------+
+|       37981 |
++-------------+
+1 row in set (0.000 sec)
+
+MariaDB [BabyName]> \t
